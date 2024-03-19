@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- font  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Home Page</title>
+    <!-- Favicon-->
+    <!-- <link rel="icon" type="image/x-icon" href="assets/favicon.ico" /> -->
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Responsive navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: skyblue;">
+        <div class="container">
+
+            <a class="navbar-brand" href="#">
+                <i class="fa-solid fa-bars text-light fa-1x me-3"></i>
+                <span class="text-light fs-3">DASHBOARD</span>
+            </a>
+            <button class="btn" onclick="logout()">
+                <i class="fa-solid fa-circle-user text-light fa-2x"></i>
+                <span class="text-light fs-4">Logout</span>
+            </button>
+        </div>
+    </nav>
+    <!-- Header -->
+    <header class="py-5 bg-image-full"
+        style="background-image: url('https://i.pinimg.com/originals/04/30/a2/0430a263502e44a9c594096cc312982e.jpg')">
+        <div class="text-center my-5">
+            <img class="img-fluid rounded-circle mb-4"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBQ4_9hQ4tNgLzx8dNFBN_aa-5R1OJj3waffzegwAvAA&s"
+                alt="..." />
+            <h1 class="text-center heading text-light">Welcome <span class="text-light" id="result"><b>User</b></span>
+            </h1>
+            <p class="text-white-50 mb-0"><b>Why AI</b> </p>
+        </div>
+    </header>
+    <!-- Content section-->
+    <section class="py-5">
+        <div class="container my-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 ">
+                    <h2>Lorem ipsum dolor sit</h2>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem odit nam tempora
+                        inventore dolores veniam mollitia, totam, enim laudantium natus eius! Quibusdam tempora qui
+                        necessitatibus sint culpa error id consectetur.</p>
+                    <p class="mb-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, earum similique
+                        nostrum odit, soluta labore porro at incidunt ea dignissimos consectetur tempora doloribus
+                        blanditiis. Nisi quisquam voluptas voluptatibus excepturi quis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Image element - set the background image for the header in the line below-->
+    <div class="py-5 bg-image-full"
+        style="background-image: url('https://images.idgesg.net/images/article/2018/10/world-globe_global-network_nodes_wifi_internet_code_programming-100777522-large.jpg?auto=webp&quality=85,70')">
+        <!-- Put anything you want here! The spacer below with inline CSS is just for demo purposes!-->
+        <div style="height: 20rem"></div>
+    </div>
+    <!-- Content section-->
+    <section class="py-5">
+        <div class="container my-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <h2>Lorem Ipsum Dolor Sit Amet</h2>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, officia quod
+                        laudantium quasi velit, cupiditate quas tempora perspiciatis ipsam magni explicabo temporibus
+                        rem iste. Necessitatibus deleniti modi autem. Corporis, dignissimos.</p>
+                    <p class="mb-0">I can't tell you how many people say they were turned off from science because of a
+                        science teacher that completely sucked out all the inspiration and enthusiasm they had for the
+                        course.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="py-5 " style="background-color: skyblue;">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; AI Avenue Website 2023</p>
+        </div>
+    </footer>
+
+    <!--  core JS-->
+    
+<script>
+        let user = localStorage.getItem("user")
+        // console.log(user);
+
+        if (!user) {
+            window.location = 'login.html'
+        }
+        else {
+            result.innerHTML = user
+        }
+
+        function logout() {
+            localStorage.removeItem("user")
+            window.location = 'login.html'
+        }
+    </script>
+    <!-- Core theme JS-->
+    <!-- // <script src="js/scripts.js"> -->
+</body>
+
+</html>
